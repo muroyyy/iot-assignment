@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart Security – Alerts</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Smart Distance-Based Security – Dashboard</h1>
+    <div id="status">Status: <span class="chip" id="chip">Idle</span></div>
+  </header>
+
+  <main>
+    <section id="stats">
+      <div class="card"><h3>Total Alerts</h3><p id="total">0</p></div>
+      <div class="card"><h3>Last Distance</h3><p id="lastDistance">–</p></div>
+      <div class="card"><h3>Last Event</h3><p id="lastEvent">–</p></div>
+    </section>
+
+    <section>
+      <h2>Recent Events</h2>
+      <table id="tbl">
+        <thead>
+          <tr><th>Time</th><th>Source</th><th>Event</th><th>Distance (cm)</th><th>Threshold</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
