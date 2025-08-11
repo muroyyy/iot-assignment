@@ -1,4 +1,4 @@
-const API = '../server/data/alerts.json';   // change if hosted elsewhere
+const API = 'http://localhost/code/server/api/list.php';
 const pollMs = 5000;
 
 async function fetchAlerts() {
